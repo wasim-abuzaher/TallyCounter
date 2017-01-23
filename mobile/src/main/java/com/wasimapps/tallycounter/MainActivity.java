@@ -9,8 +9,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private int tally;
-    TextView tallyText = (TextView) findViewById(R.id.textView_tally);
-    
+    private TextView tallyText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         Button tallyButton = (Button) findViewById(R.id.button_click);
         tallyButton.setOnClickListener(onClickTallyButton);
 
-
+        tallyText = (TextView) findViewById(R.id.textView_tally);
         tallyText.setText(String.valueOf(tally));
 
     }
