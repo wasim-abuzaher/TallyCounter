@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.wearable.view.WatchViewStub
-    android:id="@+id/watch_view_stub"
+<android.support.wearable.view.BoxInsetLayout
+    android:id="@+id/box_inset"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,4 +10,45 @@
     app:roundLayout="@layout/round_activity_main"
     tools:context="com.wasimapps.tallycounter.MainActivity"
     tools:deviceIds="wear">
-</android.support.wearable.view.WatchViewStub>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        app:layout_box="all">
+
+        <TextView
+            android:text="0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView_tally"
+            android:layout_gravity="top|center"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:text="@string/click"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_click"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="center"
+            android:layoutDirection="locale"
+            />
+
+        <Button
+            android:text="@string/reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_reset"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_gravity="bottom|center"
+            android:layoutDirection="locale"
+            android:layout_marginBottom="12dp"/>
+
+    </FrameLayout>
+
+
+</android.support.wearable.view.BoxInsetLayout>

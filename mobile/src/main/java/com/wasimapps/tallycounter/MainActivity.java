@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
         Button tallyButton = (Button) findViewById(R.id.button_click);
         tallyButton.setOnClickListener(onClickTallyButton);
 
+        Button resetButton = (Button) findViewById(R.id.button_reset);
+        resetButton.setOnClickListener(onClickResetButton);
+
         tallyText = (TextView) findViewById(R.id.textView_tally);
         tallyText.setText(String.valueOf(tally));
 
@@ -36,7 +39,14 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    private View.OnClickListener onClickResetButton = new View.OnClickListener() {
 
+        @Override
+        public void onClick(View v) {
+            tally = 0;
+            tallyText.setText(String.valueOf(tally));
+        }
+    };
 }
 
 
