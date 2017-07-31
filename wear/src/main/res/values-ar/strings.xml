@@ -3,4 +3,5 @@
     <string name="app_name">عداد</string>
     <string name="click">اضغط هنا</string>
     <string name="reset">إعادة تعيين</string>
+    <string name="count">0000</string>
 </resources>

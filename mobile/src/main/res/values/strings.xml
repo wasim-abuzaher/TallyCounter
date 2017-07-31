@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Tally Counter</string>
-    <string name="click">Count On</string>
+    <string name="click">Count</string>
     <string name="reset">Reset</string>
+    <string name="count">0000</string>
 </resources>

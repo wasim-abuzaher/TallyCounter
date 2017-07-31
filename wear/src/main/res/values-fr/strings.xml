@@ -3,4 +3,5 @@
     <string name="app_name">Compteur de compte</string>
     <string name="click">Cliquez</string>
     <string name="reset">réinitialiser</string>
+    <string name="count">0000</string>
 </resources>
